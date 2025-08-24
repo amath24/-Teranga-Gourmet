@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4, h5 {
+     font-size: 8rem;
+}
+
+li {
+    font-size: 2rem;
+}
+.main-head {
+    background-color: rgb(138, 255, 127);
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Effet de transition */
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex: 2 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+
+#logo {
+    flex: 1 1 40rem;
+    font-size: 28px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff7b00, #ff0080, #00c3ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: transform 0.3s ease; 
+      
+}
+
+a:hover {
+  color: yellow;
+  font-size: 18px;
+  
+}
+
+a:active {
+    color: #e74c3c; /* Couleur pendant le clic */
+  }
+
+#logo:hover {
+      transform: scale(1.1);
+    }
