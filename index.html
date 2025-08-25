@@ -1,25 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>-TERANGA-GOURMET</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Teranga Gourmet</title>
 </head>
 <body>
-    <header class="main-head">
-        <nav>
-        <h1 id="logo">-TERANGA-GOURMET</h1>
-        <ul>
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="index.html">A propos</a></li>
-            <li><a href="index.html">Menu</a></li>
-            <li><a href="index.html">Réservation</a></li>
-            <li><a href="index.html">Témoignages clients</a></li>
-            <li><a href="index.html">Contact</a></li>
-            <li><a href="index.html">Réservez</a></li>
-            </nav>
-        </ul>
-    </header>
+
+<header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/teranga.png" alt="Teranga Gourmet" />
+      </a>
+    </div>
+
+    <!-- Menu hamburger mobile -->
+    <div class="nav-toggle" id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Liens de navigation -->
+    <ul class="nav-links" id="nav-links">
+      <div class="nav-center">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="temoignage.html">Témoignages clients</a></li>
+      </div>
+      <div class="nav-buttons">
+        <li><a href="contact.html" class="btn">Contact</a></li>
+        <li><a href="reservation.html" class="btn">Réserver</a></li>
+      </div>
+    </ul>
+  </nav>
+</header>
+
+<!-- CONTENU PRINCIPAL -->
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Teranga Gourmet</h1>
+      <p>Découvrez l'authenticité de la cuisine sénégalaise dans une ambiance raffinée et contemporaine. Une expérience gastronomique unique où traditions et modernité se rencontrent.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="hero-btn btn-primary">Découvrir le menu</a>
+        <a href="reservation.html" class="hero-btn btn-secondary">Réserver votre table</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Teranga Gourmet. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- SCRIPT MENU BURGER -->
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    navToggle.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

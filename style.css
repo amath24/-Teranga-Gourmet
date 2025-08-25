@@ -1,84 +1,248 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-h1 {
-    font-size: 2.6rem;
-}
-
-h2 {
-    font-size: 4.8rem;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-h4, h5 {
-     font-size: 8rem;
-}
-
-li {
-    font-size: 2rem;
-}
-.main-head {
-    background-color: rgb(138, 255, 127);
-    color: white;
-}
-a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Effet de transition */
-}
-
-nav {
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding: 2rem;
-}
-
-nav ul {
-    display: flex;
-    flex: 2 1 40rem;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    
-}
-
-#logo {
-    flex: 1 1 40rem;
-    font-size: 28px;
-      font-weight: bold;
-      background: linear-gradient(45deg, #ff7b00, #ff0080, #00c3ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      cursor: pointer;
-      transition: transform 0.3s ease; 
-      
-}
-
-a:hover {
-  color: yellow;
-  font-size: 18px;
+/* --- GLOBAL --- */
+html, body {
+  height: 100%;         /* occupe toute la hauteur de la fenêtre */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
   
 }
 
-a:active {
-    color: #e74c3c; /* Couleur pendant le clic */
+main {
+  flex: 1;              /* pousse le footer en bas */
+}
+
+
+/* --- HEADER & NAVBAR --- */
+header {
+  height: 80px; /* hauteur fixe du header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto; /* Ne pas étirer */
+}
+
+.logo img {
+  height: 95px;           /* taille du logo */
+  width: auto;            /* conserve les proportions */
+  display: block;
+}
+
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #E67E22;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-between; /* espace entre liens centraux et boutons */
+}
+
+.nav-links .nav-center {
+  display: flex;
+  gap: 30px;
+  flex: 1; /* prend tout l'espace disponible */
+  justify-content: center; /* centre les liens principaux */
+}
+
+.nav-links .nav-center li a {
+  text-decoration: none;
+  color: #1C1C1C;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links .nav-center li a:hover {
+  color: #E67E22;
+}
+
+/* Les boutons restent à droite */
+.nav-links .nav-buttons {
+  display: flex;
+  gap: 15px;
+  flex: 0 0 auto; /* Ne pas étirer */
+}
+
+
+.nav-links .btn {
+  display: inline-block;
+  background-color: #E67E22;
+  color: #FAF9F6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-links .btn:hover {
+  background-color: #145A32;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hamburger menu */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #1C1C1C;
+  border-radius: 2px;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+height: 100vh; /* plein écran */
+  margin-top: 0px; /* espace pour le header fixe */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url("image/tieboudieune.jpg") no-repeat center;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FAF9F6;
+  padding: 0 20px;
+}
+
+
+.hero-content {
+  max-width: 800px;
+  
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero-btn {
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #E67E22;
+  color: #FAF9F6;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #FAF9F6;
+  border: 2px solid #FAF9F6;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 25px 10px;
+  position: relative;
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(250,249,246,0.3);
+  padding-top: 10px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .nav-links { 
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #FAF9F6;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
   }
 
-#logo:hover {
-      transform: scale(1.1);
-    }
+  .nav-links.show { display: flex; }
+
+  .nav-links .nav-center, .nav-links .nav-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-toggle { display: flex; }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
