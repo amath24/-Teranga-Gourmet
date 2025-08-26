@@ -1,0 +1,180 @@
+/* --- HEADER & NAVBAR --- */
+header {
+  height: 80px; /* hauteur fixe du header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto; /* Ne pas étirer */
+}
+
+.logo img {
+  height: 95px;           /* taille du logo */
+  width: auto;            /* conserve les proportions */
+  display: block;
+}
+
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #E67E22;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-between; /* espace entre liens centraux et boutons */
+}
+
+.nav-links .nav-center {
+  display: flex;
+  gap: 30px;
+  flex: 1; /* prend tout l'espace disponible */
+  justify-content: center; /* centre les liens principaux */
+}
+
+.nav-links .nav-center li a {
+  text-decoration: none;
+  color: #1C1C1C;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links .nav-center li a:hover {
+  color: #E67E22;
+}
+
+/* Les boutons restent à droite */
+.nav-links .nav-buttons {
+  display: flex;
+  gap: 15px;
+  flex: 0 0 auto; /* Ne pas étirer */
+}
+
+
+.nav-links .btn {
+  display: inline-block;
+  background-color: #E67E22;
+  color: #FAF9F6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-links .btn:hover {
+  background-color: #E67E22;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hamburger menu */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #1C1C1C;
+  border-radius: 2px;
+}
+
+/* Import de la police */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Section Témoignages */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #d4a017; /* Jaune doré */
+    margin-bottom: 40px;
+}
+
+/* Container des cartes */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Carte témoignage */
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border: 1px solid #f0f0f0;
+}
+
+/* Effet au survol */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Étoiles */
+.stars {
+    color: #f5a623;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Texte du témoignage */
+.testimonial-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Nom du client */
+.testimonial-card h4 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
