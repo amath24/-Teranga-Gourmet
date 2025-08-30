@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Ajoutez ces lignes après les autres polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
   <title>Teranga Gourmet</title>
 </head>
 <body>
@@ -42,19 +48,346 @@
 </header>
 
 <!-- CONTENU PRINCIPAL -->
- <!-- CONTENU PRINCIPAL -->
-<main>
-  <section class="hero">
+
+ <section class="hero">
     <div class="hero-content">
-      <h1>Teranga Gourmet</h1>
-      <p>Découvrez l'authenticité de la cuisine sénégalaise dans une ambiance raffinée et contemporaine. Une expérience gastronomique unique où traditions et modernité se rencontrent.</p>
+      <h1>Bienvenue chez <span>Teranga Gourmet</span></h1>
+      <p>Découvrez l'élégance de la gastronomie sénégalaise et africaine</p>
       <div class="hero-buttons">
-        <a href="menu.html" class="hero-btn btn-primary">Découvrir le menu</a>
-        <a href="reservation.html" class="hero-btn btn-secondary">Réserver votre table</a>
+        <a href="#menu" class="btn-primary">Voir le menu</a>
+        <a href="reservation.html" class="btn-secondary">Réserver une table</a>
       </div>
     </div>
   </section>
-</main>
+
+<!-- MENU SECTION -->
+<section id="menu" class="menu">
+  <div class="container">
+    <h2>Notre Menu <span>Gastronomique</span></h2>
+
+    <div class="menu-grid">
+      <!-- ENTRÉES -->
+      <div class="menu-category">
+        <h3>Entrées</h3>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/salade-thiere.jpg" alt="Salade Thiéré">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Salade Thiéré aux crevettes</h4>
+              <p>Perles de mil délicates, crevettes sautées, vinaigrette aux agrumes frais</p>
+            </div>
+            <span class="price">6 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/pastels.jpg" alt="Pastels de poisson">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Pastels de poisson revisités</h4>
+              <p>Beignets de dorade légère, sauce piment doux, herbes aromatiques</p>
+            </div>
+            <span class="price">5 500 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/soupe-arachide.jpg" alt="Soupe d'arachide">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Soupe d'arachide crémeuse</h4>
+              <p>Velouté d'arachide onctueux avec une touche de gingembre</p>
+            </div>
+            <span class="price">5 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/brochettes-yassa.jpg" alt="Brochettes de crevettes">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Brochettes de crevettes Yassa</h4>
+              <p>Crevettes marinées au citron et oignons fondants</p>
+            </div>
+            <span class="price">7 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/accras.jpg" alt="Accras de morue">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Accras de morue</h4>
+              <p>Petits beignets de morue relevés, croustillants à l'extérieur</p>
+            </div>
+            <span class="price">5 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/salade-mangue.jpg" alt="Salade de mangue">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Salade de mangue épicée</h4>
+              <p>Mangue juteuse, poivrons, coriandre, vinaigrette légère</p>
+            </div>
+            <span class="price">5 500 FCFA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLATS PRINCIPAUX -->
+      <div class="menu-category">
+        <h3>Plats Principaux</h3>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/thieboudiene.jpg" alt="Thiéboudiène Royal">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Thiéboudiène Royal</h4>
+              <p>Filet de mérou tendre, riz parfumé, légumes confits, sauce tomate raffinée</p>
+            </div>
+            <span class="price">15 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/poulet-yassa.jpg" alt="Poulet Yassa revisité">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Poulet Yassa revisité</h4>
+              <p>Suprême de poulet mariné, oignons caramélisés, riz basmati délicat</p>
+            </div>
+            <span class="price">12 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/mafe-agneau.jpg" alt="Mafé d'agneau">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Mafé d'agneau gastronomique</h4>
+              <p>Carré d’agneau fondant, sauce arachide onctueuse, légumes de saison</p>
+            </div>
+            <span class="price">14 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/poisson-braise.jpg" alt="Poisson braisé">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Poisson braisé à l’ivoirienne</h4>
+              <p>Dorade grillée, attiéké moelleux, sauce pimentée douce</p>
+            </div>
+            <span class="price">13 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/couscous-royal.jpg" alt="Couscous royal africain">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Couscous royal africain</h4>
+              <p>Semoule fine, légumes variés, viande au choix, sauce parfumée</p>
+            </div>
+            <span class="price">13 500 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/dibi-mouton.jpg" alt="Dibi de mouton">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Dibi de mouton</h4>
+              <p>Mouton grillé, oignons, sauce légère à base de citron et épices</p>
+            </div>
+            <span class="price">12 500 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/poulet-mafe.jpg" alt="Poulet mafé aux légumes">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Poulet mafé aux légumes</h4>
+              <p>Poulet tendre mijoté avec sauce arachide et légumes croquants</p>
+            </div>
+            <span class="price">13 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="menu-category">
+        <h3>Desserts</h3>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/thiakry.jpg" alt="Thiakry gourmand">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Thiakry gourmand</h4>
+              <p>Couscous de mil au yaourt, noix de cajou caramélisées, touche de miel</p>
+            </div>
+            <span class="price">5 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/pasteque-bissap.jpg" alt="Pastèque & bissap">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Pastèque & bissap givré</h4>
+              <p>Granité de bissap, carpaccio de pastèque, sirop de menthe fraîche</p>
+            </div>
+            <span class="price">4 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/delice-mangue-coco.jpg" alt="Délice mangue-coco">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Délice mangue-coco</h4>
+              <p>Mousse légère à la noix de coco, coulis de mangue sucrée</p>
+            </div>
+            <span class="price">5 500 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/sorbet-gingembre.jpg" alt="Sorbet gingembre">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Sorbet gingembre exotique</h4>
+              <p>Sorbet frais au gingembre et citron vert, rafraîchissant</p>
+            </div>
+            <span class="price">4 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/beignets-banane.jpg" alt="Beignets de banane">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Beignets de banane flambés</h4>
+              <p>Banane caramélisée, sauce légère à la vanille</p>
+            </div>
+            <span class="price">4 500 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/tartelette-noix.jpg" alt="Tartelette aux noix de cajou">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Tartelette aux noix de cajou</h4>
+              <p>Pâte fine, crème douce, noix de cajou caramélisées</p>
+            </div>
+            <span class="price">5 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOISSONS -->
+      <div class="menu-category">
+        <h3>Boissons</h3>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/bissap.jpg" alt="Jus de bissap">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Jus de bissap</h4>
+              <p>Infusion d'hibiscus rouge, rafraîchissante et légèrement sucrée</p>
+            </div>
+            <span class="price">2 500 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/bouye.jpg" alt="Jus de bouye">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Jus de bouye (baobab)</h4>
+              <p>Boisson vitaminée et crémeuse, saveur exotique</p>
+            </div>
+            <span class="price">2 500 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/cocktail.jpg" alt="Cocktail Soleil de Dakar">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Cocktail Soleil de Dakar</h4>
+              <p>Rhum, bissap, citron vert, servi frais</p>
+            </div>
+            <span class="price">4 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="images/jus-gingembre.jpg" alt="Jus de gingembre">
+          </div>
+          <div class="item-content">
+            <div class="item-details">
+              <h4>Jus de gingembre</h4>
+              <p>Gingembre frais, citron, légèrement sucré et tonique</p>
+            </div>
+            <span class="price">2 500 FCFA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <footer>
@@ -62,17 +395,10 @@
     <p>&copy; 2025 Teranga Gourmet. Tous droits réservés.</p>
   </div>
 </footer>
+<script src="script.JS"></script>
 
 <!-- SCRIPT MENU BURGER -->
-<script>
-  const navToggle = document.getElementById('nav-toggle');
-  const navLinks = document.getElementById('nav-links');
 
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    navToggle.classList.toggle('active');
-  });
-</script>
 
 </body>
 </html>
