@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/teranga.png" alt="Teranga Gourmet" />
+      </a>
+    </div>
+
+    <!-- Menu hamburger mobile -->
+    <div class="nav-toggle" id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Liens de navigation -->
+    <ul class="nav-links" id="nav-links">
+      <div class="nav-center">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="temoignage.html">Témoignages clients</a></li>
+      </div>
+      <div class="nav-buttons">
+        <li><a href="contact.html" class="btn">Contact</a></li>
+        <li><a href="reservation.html" class="btn">Réserver</a></li>
+      </div>
+    </ul>
+  </nav>
+</header>
+<!-- section reservation -->
+    <section class="reservation-section">
+        <h1>Réservez Votre Table</h1>
+        
+        <form class="reservation-form">
+            <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+221 XX XXX XX XX" required>
+            </div>
+
+            <div class="form-group-inline">
+                <label for="date">Date et Heure</label>
+                <input type="date" id="date" name="date" required>
+                <select id="heure" name="heure" required>
+                    <option value="">Heure</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                    <option>21:00</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="personnes">Nombre de convives</label>
+                <select id="personnes" name="personnes" required>
+                    <option>1 personne</option>
+                    <option selected>2 personnes</option>
+                    <option>3 personnes</option>
+                    <option>4 personnes</option>
+                    <option>5 personnes</option>
+                    <option>6 personnes</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-reserver">Réserver maintenant</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
+</body>
+</html>
