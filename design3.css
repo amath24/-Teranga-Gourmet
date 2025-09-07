@@ -14,7 +14,7 @@ body {
 /* Style général */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -78,7 +78,7 @@ select:focus {
 
 /* Bouton réserver */
 .btn-reserver {
-    background-color: #c19b2e;
+    background-color: #E67E22;
     color: #fff;
     padding: 14px;
     font-size: 16px;
