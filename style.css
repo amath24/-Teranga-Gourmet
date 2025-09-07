@@ -366,7 +366,7 @@ p, .price {
     width: 100%;
     background-color: #fff;
     flex-direction: column;
-    padding: 80px 20px 30px;
+    padding: 60px 20px 30px; /* Réduit le padding top de 80px à 60px */
     transition: 0.3s ease-in-out;
     z-index: 999;
   }
@@ -378,18 +378,14 @@ p, .price {
   .nav-links .nav-center {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    gap: 15px; /* Réduit l'espacement entre les liens de 30px à 15px */
+    margin-bottom: 15px; /* Réduit la marge du bas de 20px à 15px */
   }
 
   .nav-links .nav-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-  }
-
-  .nav-links .nav-buttons .btn {
-    width: 200px;
-    text-align: center;
+    gap: 10px; /* Réduit l'espacement entre les boutons de 15px à 10px */
   }
 
   .logo {
@@ -417,5 +413,17 @@ p, .price {
   .item-image {
     width: 100%;
     height: 200px;
+  }
+  
+  .nav-links {
+    padding: 50px 20px 25px; /* Réduit encore plus le padding pour les très petits écrans */
+  }
+
+  .nav-links .nav-center {
+    gap: 12px; /* Réduit davantage l'espacement pour les très petits écrans */
+  }
+
+  .nav-links .nav-buttons {
+    gap: 8px; /* Réduit davantage l'espacement entre les boutons */
   }
 }
