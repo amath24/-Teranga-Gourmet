@@ -6,7 +6,8 @@ const body = document.body;
 // Événement click pour afficher/masquer le menu
 toggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
-  body.style.overflow = navLinks.classList.contains('show') ? 'hidden' : 'auto';
+  body.classList.toggle('menu-open');
+  toggle.classList.toggle('active');
 });
 
 // Fermer le menu quand on clique sur un lien
@@ -14,7 +15,8 @@ const links = document.querySelectorAll('.nav-links a');
 links.forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('show');
-    body.style.overflow = 'auto';
+    body.classList.remove('menu-open');
+    toggle.classList.remove('active');
   });
 });
 
@@ -22,6 +24,7 @@ links.forEach(link => {
 document.addEventListener('click', (e) => {
   if (!navLinks.contains(e.target) && !toggle.contains(e.target) && navLinks.classList.contains('show')) {
     navLinks.classList.remove('show');
-    body.style.overflow = 'auto';
+    body.classList.remove('menu-open');
+    toggle.classList.remove('active');
   }
 });
