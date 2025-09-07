@@ -366,9 +366,10 @@ p, .price {
     width: 100%;
     background-color: #fff;
     flex-direction: column;
-    padding: 60px 20px 30px; /* Réduit le padding top de 80px à 60px */
+    padding: 40px 20px 30px; /* Réduit le padding-top à 40px */
     transition: 0.3s ease-in-out;
     z-index: 999;
+    justify-content: flex-start; /* Aligne les éléments en haut */
   }
 
   .nav-links.show {
@@ -378,14 +379,22 @@ p, .price {
   .nav-links .nav-center {
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Réduit l'espacement entre les liens de 30px à 15px */
-    margin-bottom: 15px; /* Réduit la marge du bas de 20px à 15px */
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-top: 20px; /* Ajoute un espace en haut des liens */
   }
 
   .nav-links .nav-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Réduit l'espacement entre les boutons de 15px à 10px */
+    gap: 8px;
+    margin-top: 10px; /* Réduit la marge au-dessus des boutons */
+  }
+
+  .nav-links .nav-buttons .btn {
+    width: 200px; /* Largeur fixe pour les boutons */
+    text-align: center;
+    margin: 0; /* Supprime les marges */
   }
 
   .logo {
@@ -416,14 +425,11 @@ p, .price {
   }
   
   .nav-links {
-    padding: 50px 20px 25px; /* Réduit encore plus le padding pour les très petits écrans */
+    padding: 30px 20px 25px; /* Réduit encore plus le padding */
   }
 
   .nav-links .nav-center {
-    gap: 12px; /* Réduit davantage l'espacement pour les très petits écrans */
-  }
-
-  .nav-links .nav-buttons {
-    gap: 8px; /* Réduit davantage l'espacement entre les boutons */
+    gap: 10px;
+    margin-bottom: 15px;
   }
 }
